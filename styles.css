@@ -1,0 +1,235 @@
+body{
+    background-color: rgb(232 245 233);
+}
+
+#navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(59 93 59);
+    padding: 0;
+    z-index: 1000;
+}
+
+#top-logo{
+    padding-left: 50px;
+    font-family: Arial, sans-serif;
+    color: rgb(232 245 233);
+    font-weight: bold;
+}
+.navbar{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-right: 40%;
+    gap: 5rem;
+    font-family: Arial, sans-serif;
+}
+
+.nav-links a{
+    color: rgb(232 245 233);
+    text-decoration: none;
+}
+
+.main-content {
+    margin-top: 70px;
+    padding: 20px 40px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card{
+    background-color: #eef6ee;
+    border-radius: 12px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.379);
+
+}
+
+.dashboard-banner{
+    background-color: #2a7140;
+    color:#eef6ee;
+    border-radius: 12px;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.banner-title .divider{
+    color: #edd554;
+    font-weight: bolder;
+}
+
+.Logout-btn{
+    background-color:#edd554;
+    color: #3b5d3b;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-card h2{
+    margin: 0;
+    color: #3b5d3b;
+    font-size: 1.1rem;
+}
+
+.dropdowns-row{
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown-card{
+    flex: 1;
+    background-color: #eef6ee;
+    border-radius: 12px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.379);
+    cursor: pointer;
+    color: #3b5d3b;
+}
+
+.cards-grid{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.attendance-card{
+    background-color: #2a7140;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.attendance-card h3 {
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.events-card{
+    background-color: #a3c2a9;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.events-card h3 {
+  color: #1e3a24;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.events-card .section-sub {
+  color: #1e3a24;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin: 10px 0 8px 0;
+  opacity: 0.85;
+}
+
+.event-item {
+  background-color: #ffffff;
+  border-radius: 20px; /* Pillow capsule shape */
+  padding: 7px 14px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: #3b5d3b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.event-item::after {
+  content: "⋮"; 
+  font-weight: bold;
+  color: #777777;
+  font-size: 0.85rem;
+}
+.grades-card{
+    background-color: #a3c2a9;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grades-card h3 {
+  color: #1e3a24;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
+}
+
+.grade-input-row {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.68rem;
+  font-weight: bold;
+  color: #3b5d3b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.grade-input-row label {
+  font-size: 0.68rem;
+  font-weight: bold;
+}
+
+.grade-input-row input {
+  width: 45px;
+  height: 26px;
+  border: 1.5px solid #2a7140;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #333333;
+  outline: none;
+  background-color: #ffffff;
+  margin-right: 4px;
+}

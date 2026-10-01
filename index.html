@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <header>
+    <div id="navigation">
+        <div id="top-logo">iMARKA</div>
+        <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#faculty">Faculty</a></li>
+             <li><a href="#students">Students</a></li>
+
+
+        </ul>
+    </nav>
+
+
+    </div>
+    </header>
+
+    <main class="main-content">
+
+        <div class="dashboard-banner">
+            <div class="banner-title">
+                <span class="brand">iMARKA</span>
+                <span class="divider">|</span>
+                <span class="subtext">Admin Dashboard</span>
+            </div>
+            <button class="Logout-btn">Logout</button>
+        </div>
+
+        <div class="card header-card">
+            <h2>College of Computer Studies</h2>
+        </div>
+
+        <div class="dropdowns-row">
+            <div class="dropdown-card">
+                <span>Full-time Professors</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="dropdown-card">
+                <span>Part-Time Professors</span>
+                <span class="arrow">▼</span>
+            </div>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card attendance-card">
+                <h3>Attendance</h3>
+            </div>
+
+            <div class="card events-card">
+                <h3>📅 CALENDAR</h3>
+                <p class="section-sub">UPCOMING EVENTS</p>
+                <div class="event-item">ORIENTATION <span>Monday</span></div>
+                <div class="event-item">U-WEEK <span>Wednesday</span></div>
+                <div class="event-item">BOARD MEETING</div>
+                <div class="event-item">SYSTEM UPGRADE</div>
+            </div>
+
+            <div class="card grades-card">
+                <h3>GRADE PERCENTAGE</h3>
+                <div class="grade-input-row">
+                    <label>WRITTEN WORK</label>
+                    <input type="text">%
+                </div>
+                <div class="grade-input-row">
+                    <label>PERFORMANCE TASK</label>
+                    <input type="text">%
+                </div>
+                <div class="grade-input-row">
+                    <label>MIDTERM</label>
+                    <input type="text">%
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
